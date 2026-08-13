@@ -7,7 +7,7 @@ subtitle: PhD Candidate and Teaching Assistant at University of Urbino
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: bruna_pic.jpeg
   image_circular: true 
   more_info: >
     <p>Italy</p>
