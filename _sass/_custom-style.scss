@@ -1,59 +1,87 @@
 /* ==========================================================================
-   1. COLORI DEL TEMA (Nero in Light Mode, Bianco in Dark Mode)
+   1. COLORE VIOLA UNIFICATO (LIGHT & DARK MODE)
    ========================================================================== */
 
-/* Light Mode: link, menu ("home") e dettagli in NERO */
+/* Light Mode: Viola principale */
 :root {
-  --global-theme-color: #000000 !important;
-  --global-hover-color: #555555 !important;
+  --global-theme-color: #ab05b6 !important;
+  --global-hover-color: #8a0494 !important;
 }
 
-/* Dark Mode: link, menu e dettagli in BIANCO */
+/* Dark Mode: Stesso Viola con hover luminoso */
 html[data-theme="dark"] {
-  --global-theme-color: #ffffff !important;
-  --global-hover-color: #cccccc !important;
+  --global-theme-color: #ab05b6 !important;
+  --global-hover-color: #d13be1 !important;
+}
+
+/* Forzatura colore Viola su TUTTI i link e icone attive (elimina l'azzurro) */
+a,
+html[data-theme="dark"] a,
+footer a,
+html[data-theme="dark"] footer a {
+  color: var(--global-theme-color) !important;
+}
+
+a:hover,
+html[data-theme="dark"] a:hover,
+footer a:hover,
+html[data-theme="dark"] footer a:hover {
+  color: var(--global-hover-color) !important;
 }
 
 /* ==========================================================================
-   2. RIDUZIONE ALTEZZA / SPESSORE DEL MENU (NAVBAR)
+   2. NAVBAR E CAMBIO TEMA (DISATTIVA ICONA SYSTEM)
    ========================================================================== */
 
+/* Spessore ridotto della barra del menu */
 header nav.navbar {
   padding-top: 0.4rem !important;
   padding-bottom: 0.4rem !important;
   min-height: auto !important;
 }
 
-/* ==========================================================================
-   3. SFONDO FOOTER
-   ========================================================================== */
-
-footer,
-footer.sticky-bottom,
-footer.fixed-bottom {
-  background-color: var(--global-bg-color) !important;
-  color: var(--global-text-color) !important;
-  border-top: 1px solid var(--global-divider-color) !important;
+/* Nasconde il terzo stato "System" lasciando solo Sole e Luna */
+#light-toggle-system {
+  display: none !important;
 }
 
 /* ==========================================================================
-   4. RIDUZIONE FORZATA ICONE SOCIAL (FontAwesome & Academicons)
+   3. RIDUZIONE DRASTICA E FORZATA DELLE ICONE SOCIAL
    ========================================================================== */
 
-.contact-icons,
+.social,
 .social-icons,
-.social {
-  & i,
-  & svg,
-  & .fa-1x,
-  & .fa-2x,
-  & .fa-3x,
-  & [class*="fa-"],
-  & [class*="ai-"] {
-    font-size: 1.3rem !important;
-    height: 1.3rem !important;
-    width: auto !important;
-    line-height: 1 !important;
-    vertical-align: middle !important;
-  }
+.contact-icons,
+.contact-icon {
+  font-size: 1.4rem !important;
+}
+
+.social a,
+.social-icons a,
+.contact-icons a {
+  font-size: 1.4rem !important;
+}
+
+/* Riduzione diretta di tag <i>, <svg>, classi FontAwesome e Academicons */
+.social i,
+.social svg,
+.social-icons i,
+.social-icons svg,
+.contact-icons i,
+.contact-icons svg,
+.contact-icon i,
+.contact-icon svg,
+.social [class*="fa-"],
+.social [class*="ai-"],
+.social-icons [class*="fa-"],
+.social-icons [class*="ai-"],
+.contact-icons [class*="fa-"],
+.contact-icons [class*="ai-"] {
+  font-size: 1.4rem !important;
+  width: 1.4rem !important;
+  height: 1.4rem !important;
+  max-width: 1.4rem !important;
+  max-height: 1.4rem !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
 }
