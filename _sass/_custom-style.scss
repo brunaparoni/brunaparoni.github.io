@@ -1,25 +1,59 @@
 /* ==========================================================================
-   PERSONALIZZAZIONI CUSTOM
+   1. COLORI DEL TEMA (Nero in Light Mode, Bianco in Dark Mode)
    ========================================================================== */
 
-/* 1. Modalità Chiara (Light Mode): dettagli e link in NERO */
+/* Light Mode: link, menu ("home") e dettagli in NERO */
 :root {
   --global-theme-color: #000000 !important;
   --global-hover-color: #555555 !important;
 }
 
-/* 2. Modalità Scura (Dark Mode): dettagli e link in BIANCO */
+/* Dark Mode: link, menu e dettagli in BIANCO */
 html[data-theme="dark"] {
   --global-theme-color: #ffffff !important;
   --global-hover-color: #cccccc !important;
 }
 
-/* 3. Dimensione icone social e contatti */
-.social-icons i,
-.contact-icons i,
-.social i,
-.social-icons .ai,
-.contact-icons .ai,
-.social .ai {
-  font-size: 1.3rem !important;
+/* ==========================================================================
+   2. RIDUZIONE ALTEZZA / SPESSORE DEL MENU (NAVBAR)
+   ========================================================================== */
+
+header nav.navbar {
+  padding-top: 0.4rem !important;
+  padding-bottom: 0.4rem !important;
+  min-height: auto !important;
+}
+
+/* ==========================================================================
+   3. SFONDO FOOTER
+   ========================================================================== */
+
+footer,
+footer.sticky-bottom,
+footer.fixed-bottom {
+  background-color: var(--global-bg-color) !important;
+  color: var(--global-text-color) !important;
+  border-top: 1px solid var(--global-divider-color) !important;
+}
+
+/* ==========================================================================
+   4. RIDUZIONE FORZATA ICONE SOCIAL (FontAwesome & Academicons)
+   ========================================================================== */
+
+.contact-icons,
+.social-icons,
+.social {
+  & i,
+  & svg,
+  & .fa-1x,
+  & .fa-2x,
+  & .fa-3x,
+  & [class*="fa-"],
+  & [class*="ai-"] {
+    font-size: 1.3rem !important;
+    height: 1.3rem !important;
+    width: auto !important;
+    line-height: 1 !important;
+    vertical-align: middle !important;
+  }
 }

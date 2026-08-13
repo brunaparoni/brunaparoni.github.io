@@ -424,7 +424,7 @@ enable_darkmode: true
 enable_navbar_social: false
 enable_project_categories: true
 enable_medium_zoom: true
-enable_progressbar: true
+enable_progressbar: false
 enable_video_embedding: false
 
 # -----------------------------------------------------------------------------
