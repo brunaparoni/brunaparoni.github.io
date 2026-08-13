@@ -9,16 +9,15 @@ profile:
   align: left
   image: bruna_pic.jpeg
   image_circular: true
-  
 
-selected_papers: false # Nasconde la lista pubblicazioni dalla home
-social: true # Mostra le icone dei social in fondo
+selected_papers: false
+social: true
 
 announcements:
-  enabled: false # Disattiva la timeline / news
+  enabled: false
 
 latest_posts:
-  enabled: false # Disattiva il blog
+  enabled: false
 ---
 
 Bruna is a **PhD Candidate in Communication Sciences and Digital Culture** at the University of Urbino Carlo Bo (Italy). With a background in linguistics and communication studies, she studies how digital platforms and algorithmic amplification shape political communication, and how these dynamics unfold across borders.
