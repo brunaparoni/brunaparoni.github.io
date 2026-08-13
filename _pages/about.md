@@ -6,7 +6,7 @@ permalink: /
 subtitle: PhD Candidate and Teaching Assistant at University of Urbino
 
 profile:
-  align: right
+  align: left
   image: bruna_pic.jpeg
   image_circular: true 
   
