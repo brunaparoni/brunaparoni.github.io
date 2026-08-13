@@ -94,6 +94,11 @@ al_folio:
 # Layout
 # -----------------------------------------------------------------------------
 
+header_pages:
+  - about.md
+  - publications.md
+  - cv.md
+
 navbar_fixed: true
 footer_fixed: true
 search_enabled: true
