@@ -1,6 +1,15 @@
-/* Riduzione dimensione icone social e contatti */
-.social-icons i, 
-.contact-icons i,
-.social i {
-  font-size: 1.3rem !important;
+/* Dimensione personalizzata per icone social e contatti - AGGIORNATA */
+
+/* Target robusto per tutti i contenitori di icone e i loro pseudo-elementi */
+.social-icons,
+.contact-icons,
+.social {
+  & i,
+  & i::before,
+  & [class^="ai-"],  /* Target specifico per Academicons (Scholar) */
+  & [class*=" ai-"] {
+    font-size: 1.3rem !important; /* Regola qui la dimensione generale */
+    line-height: 1 !important; /* Mantiene un allineamento pulito */
+    vertical-align: middle !important;
+  }
 }
