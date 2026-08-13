@@ -9,8 +9,7 @@ profile:
   align: right
   image: bruna_pic.jpeg
   image_circular: true 
-  more_info: >
-    <p>Italy</p>
+  
 
 selected_papers: false # Nasconde la lista pubblicazioni dalla home
 social: true # Mostra le icone dei social in fondo
