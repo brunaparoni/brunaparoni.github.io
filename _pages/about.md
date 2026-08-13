@@ -8,7 +8,7 @@ subtitle: PhD Candidate and Teaching Assistant at University of Urbino
 profile:
   align: left
   image: bruna_pic.jpeg
-  image_circular: true 
+  image_circular: true
   
 
 selected_papers: false # Nasconde la lista pubblicazioni dalla home
