@@ -1,15 +1,25 @@
-/* Dimensione personalizzata per icone social e contatti - AGGIORNATA */
+/* ==========================================================================
+   PERSONALIZZAZIONI CUSTOM
+   ========================================================================== */
 
-/* Target robusto per tutti i contenitori di icone e i loro pseudo-elementi */
-.social-icons,
-.contact-icons,
-.social {
-  & i,
-  & i::before,
-  & [class^="ai-"],  /* Target specifico per Academicons (Scholar) */
-  & [class*=" ai-"] {
-    font-size: 1.3rem !important; /* Regola qui la dimensione generale */
-    line-height: 1 !important; /* Mantiene un allineamento pulito */
-    vertical-align: middle !important;
-  }
+/* 1. Modalità Chiara (Light Mode): dettagli e link in NERO */
+:root {
+  --global-theme-color: #000000 !important;
+  --global-hover-color: #555555 !important;
+}
+
+/* 2. Modalità Scura (Dark Mode): dettagli e link in BIANCO */
+html[data-theme="dark"] {
+  --global-theme-color: #ffffff !important;
+  --global-hover-color: #cccccc !important;
+}
+
+/* 3. Dimensione icone social e contatti */
+.social-icons i,
+.contact-icons i,
+.social i,
+.social-icons .ai,
+.contact-icons .ai,
+.social .ai {
+  font-size: 1.3rem !important;
 }
